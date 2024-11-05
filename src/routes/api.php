@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ListproductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,5 +21,6 @@ Route::group([
 ], function () {
     Route::resources([
         'listproducts' => ListproductController::class,
+        'clients' => ClientController::class,
     ]);
 });
